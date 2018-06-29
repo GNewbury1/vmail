@@ -27,7 +27,7 @@ import time
 import random
 import logging
 
-from gevent.coros import Semaphore
+from gevent.lock import Semaphore
 from gevent.local import local
 
 from sqlalchemy import create_engine, func, text, and_, not_, or_, exists, exc
